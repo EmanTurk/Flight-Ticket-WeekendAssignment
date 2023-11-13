@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EasyxFlight</title>
+    <link rel="stylesheet" href="./loginPage-Style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo"><a href="#"> EasyxFlight</a></div>
+      <ul class="links">
+        <li><a href="home">Home</a></li>
+        <li><a href="myflights">My Flights</a></li>
+        <li><a href="cart">My Cart</a></li>
+      </ul>
+      <a href="#" class="logout-button">LogOut</a>
+    </div>
+<!-- Hero  Section here -->
+<div class="main-content">
+
+    <section class="selectFlights">
+        
+      <h1>Select Flight</h1>
+      
+      <form id="selectFlights-forum">
+        <div class="input-row">
+            <div class="input-group">
+                <label for="select-flight-from">From:</label>
+                <input type="text" name="flight-from" id="select-flight-from" required />
+            </div>
+            <div class="input-group">
+                <label for="select-flight-to">To:</label>
+                <input type="text" name="flight-to" id="select-flight-to" required />
+            </div>
+        </div>
+        
+        <div class="input-center">
+            <label for="add-flightPrice">Price:</label>
+            <input type="number" name="flightPrice" id="add-flightPrice" min="20" required />
+        </div>
+
+        <div class="dates">
+          <label for="departureDate"
+            >Departure Date:
+            <input
+              type="date"
+              name="departure-date"
+              id="add-flight-departure-date"
+              required
+          /></label>
+          <br>
+          
+          <label for="return-date"
+            >Return Date:
+            <input
+              type="date"
+              name="return-date"
+              id="add-flight-return-date"
+              required
+          /></label>
+        </div>
+        <input type="submit" value="Add Flight" id="addfFlight-btn" />
+      </form>
+    </section>
+    
+    <section class="flights-list-sort">
+        <div class="flights-container">
+            <button id="sortPriceBtn">Sort by Price</button>
+            <div id="flightsList" class="flights-list">
+            </div>
+        </div>
+    </section>
+</div>
+
+
+  
+<script src="./SecondPage.js"></script>
+  </body>
+</html>

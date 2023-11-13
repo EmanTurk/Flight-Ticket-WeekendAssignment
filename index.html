@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyscanner</title>
+    <link rel="stylesheet" href="./loginpage.css">
+  </head>
+  <body>
+  
+    
+    <div class="container">
+        <h2 id="login-header">Login</h2>
+      <form id="user-forum">
+        <label for="Username">Name:</label>
+        <input type="text" id="username" name="name" required />
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+        <div class="error-message" id="emailError"></div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <div class="error-message" id="passwordError"></div>
+        
+        <!-- To Put the checkbox with the label in the sameline -Inline -->
+        <div class="checkbox-container">
+       <input type="checkbox" id="isAdmin" name="admin">
+       <label for="isAdmin">Admin</label> 
+       <div id="demo1"></div>
+
+        </div>
+
+        <input type="submit" value="Login" />
+        
+      </form>
+    </div>
+    <script src="./loginpage.js"></script>
+  </body>
+</html>

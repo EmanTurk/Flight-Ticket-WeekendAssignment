@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("./assets/Airplane\ .jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+
+a:hover{
+    color: rgb(62, 156, 156);
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.logout-button{
+    background-color: rgba(55, 144, 182, 0.668);
+    padding: 1rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.07rem;
+
+}
+
+.selectFlights{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px ;
+    border: solid 1px rgb(215, 101, 60);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;    
+    align-self: center;
+    margin-top: 100px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="date"], 
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    margin-right: 8px;
+    transition: border 0.3s ease;
+    width: 200px;
+}
+#priceinput{
+    width: 80px;
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(252, 255, 255);
+    color: rgb(5, 5, 5);
+    padding: 15px 30px;
+    border: 0.1rem rgb(54, 168, 176) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    box-shadow: 2px 2px 4px rgba(77, 77, 77, 0.3);
+
+}
+
+#addfFlight-btn :hover {
+    background-color: #4d994f; /* Background color on hover */
+    color: rgb(118, 55, 55); /* Text color on hover */
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+.input-center {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+/* Here is the other section of the page-the sort one */
+.flights-list-sort{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px ;
+    border: solid 1px rgb(215, 101, 60);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;    
+    align-self: center;
+}
+
+#sortPriceBtn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: rgb(252, 255, 255);
+    color: rgb(5, 5, 5);
+    padding: 15px 30px;
+    border: 0.1rem rgb(54, 168, 176) solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 200px;
+    box-shadow: 2px 2px 4px rgba(77, 77, 77, 0.3);
+
+}
+
+.flight-ticket {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: white;
+}
+
+.ticket-header {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.ticket-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-to-cart-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049;
+}
+
